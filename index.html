@@ -1,0 +1,223 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+     <style media="screen">
+     body{
+            background: url("http://image.shutterstock.com/z/stock-vector-chalkboard-fastfood-delicious-hand-drawn-vector-seamless-pattern-with-burger-hot-dog-and-french-205259908.jpg");
+     }
+       .whole-burger{
+         position: absolute;
+         top: 50%;
+         left: 40%;
+         transform: translate(-50%,-50%);
+       }
+       img {
+         position: absolute;
+}
+
+@keyframes top-bun {
+  0%{
+    top: -133px;
+  }
+  50%{
+        top: -249px;
+  }
+  100%{
+        top: -104px;
+  }
+}
+@keyframes salad {
+  0%{
+    top: 0;
+  }
+  50%{
+        top: -93px;
+  }
+  100%{
+    top: -14px;
+  }
+}
+@keyframes sauce {
+  0%{
+    top: 0;
+  }
+  50%{
+
+          top: -100px;
+
+  }
+  100%{
+        top: 0px;
+  }
+}
+@keyframes bacon {
+  0% {
+    top: -147px;
+  opacity: 0;
+  -webkit-transform: translate3d(-3000px, 0, 0);
+  transform: translate3d(-3000px, 0, 0);
+}
+
+60% {
+  top: -147px;
+  opacity: 1;
+  -webkit-transform: translate3d(25px, 0, 0);
+  transform: translate3d(25px, 0, 0);
+}
+
+75% {
+  top: -147px;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+}
+
+90% {
+    top: -52px;
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
+}
+
+to {
+      top: -52px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+}
+.top{
+  top: -104px;
+  animation-name: top-bun;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+}
+.salad{
+  top: -14px;
+  animation-name: salad;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transform: rotate(10deg);
+}
+.sauce{
+      top: 0px;
+      animation-name: sauce;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+}
+#bacon{
+      top: -52px;
+      animation-name: bacon;
+      animation-duration: 2.2s;
+      animation-iteration-count: 1;
+      animation-delay: 2s
+}
+@keyframes jala {
+  0% {
+    top: -94px;
+  opacity: 0;
+  -webkit-transform: translate3d(3000px, 0, 0);
+  transform: translate3d(3000px, 0, 0);
+}
+
+60% {
+  top: -94px;
+  opacity: 1;
+  -webkit-transform: translate3d(25px, 0, 0);
+  transform: translate3d(25px, 0, 0);
+}
+
+75% {
+  top: -94px;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+}
+
+90% {
+        top: -25px;
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
+}
+
+to {
+          top: -25px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+}
+#jala{
+      top: -25px;
+  animation-name: jala;
+  animation-duration: 2.2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s
+}
+@keyframes tomtom {
+  0% {
+  top: -37px;
+  opacity: 0;
+  -webkit-transform: translate3d(3000px, 0, 0);
+  transform: translate3d(3000px, 0, 0);
+}
+
+60% {
+  top: -37px;
+  opacity: 1;
+  -webkit-transform: translate3d(25px, 0, 0);
+  transform: translate3d(25px, 0, 0);
+}
+
+75% {
+  top: -37px;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+}
+
+90% {
+        top: -12px;
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
+}
+
+to {
+    top: -12px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+}
+#tomtom{
+      top: -12px;
+  animation-name: tomtom;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 2s
+}
+
+     </style>
+   </head>
+   <body>
+
+     <div class="hi">
+       <div class="whole-burger">
+         <img  class="top" style="z-index: 7;left: 40px;"src="bunTop.png" alt="">
+         <img id="bacon" class="wow bounceInLeft " data-wow-duration=".7s" data-wow-delay="0.7s" style="z-index: 6;left: 56px;"src="bacon.png" alt="">
+         <img id="jala" class="wow bounceInRight" data-wow-duration="0.7s" data-wow-delay="0.6s" style="z-index: 5;left: 140px;"src="jalapenos.png" alt="">
+         <img class="sauce" style="z-index: 4;left: 30px;"src="sauce.png" alt="">
+         <img class="salad" style="z-index: 3;"src="salad.png" alt="">
+         <img id="tomtom" class="wow bounceInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s" style="z-index: 2;left: 56px;"src="tomato.png" alt="">
+         <img class="wow bounceInRight" data-wow-duration="0.3s" data-wow-delay="0.2s" style="left: 67px; z-index: 1;"src="cheese.png" alt="">
+         <img src="bunBottomBeef.png" alt="">
+       </div>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+   </body>
+ </html>
